@@ -1,0 +1,40 @@
+Clase 03:
+
+Constructores: Setters/Getters
+
+
+        Ejemplo#1:
+                    #include <iostream>
+                    using namespace std;
+                    
+                    class Personaje{
+
+                        int salud = 0;
+                        int magia;
+
+                        public:
+
+                        void setSalud(int i){
+                            this -> salud += i;
+                            
+                        }int getSalud(){
+                            return this -> salud;
+                            
+                        }void setMagia(int x){
+                            this -> magia +=x;
+                        }int getMagia(){
+                            return this -> magia;
+                        }
+                    };
+
+                    int main(){
+                        Personaje miPersonaje;
+                        int s=10;
+                        cout<<"La salud del personaje será: ";
+                        miPersonaje.setSalud(s);
+                        int salud = miPersonaje.getSalud();
+                        cout<<salud;
+                        return 0;
+                    }
+                    
+                    
